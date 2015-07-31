@@ -1,0 +1,156 @@
+html, body {
+  padding     : 0;
+  margin      : 0;
+  height      : 100%;
+  width       : 100%;
+  font-family : Tahoma, Helvetica, sans-serif;
+  overflow    : hidden;
+}
+
+.esriRTL label {
+  /*Example of a rule that will be applied if the app is viewed in a browser with a RTL locale like Hebrew or Arabic.*/
+}
+
+.app-error .loading-message {
+  background  : url(../images/error.png) no-repeat top center;
+  padding-top : 60px;
+  width       : 100%;
+  position    : absolute;
+  z-index     : 2;
+  top         : 40%;
+  left        : 0;
+  text-align  : center;
+}
+
+.message-node {
+  position         : absolute;
+  top              : 30%;
+  z-index          : 99;
+  width            : 100%;
+  padding          : 40px;
+  text-align       : center;
+  font-size        : 2em;
+  color            : #fff;
+  background-color : #eee;
+}
+
+.error-node {
+  color       : darkred;
+  text-shadow : 1px 1px 0 pink;
+}
+
+#main-container {
+  height  : 100%;
+  width   : 100%;
+  padding : 0;
+}
+
+#main-container * {
+  outline : none !important;
+}
+
+#main-container .dijitContentPane {
+  border-color : transparent !important;
+  background   : transparent;
+  overflow     : hidden;
+}
+
+#main-top-pane {
+  height   : 30px;
+  padding  : 10px;
+  overflow : hidden;
+}
+
+#app-title {
+  font-size : 17pt;
+}
+
+#app-logo {
+  position : absolute;
+  top      : 0;
+  right    : 0;
+  height   : 50px;
+}
+
+#center-map-pane {
+  margin  : 10px;
+  padding : 0;
+}
+
+#center-map-pane.dijitBorderContainer-child {
+  border-radius : 6px;
+}
+
+#total-count-label {
+  z-index        : 99;
+  position       : absolute;
+  top            : 5px;
+  right          : 5px;
+  font-size      : 96pt;
+  padding        : 10px;
+  pointer-events : none;
+}
+
+#main-left-pane {
+  width : 20%;
+}
+
+#center-right-pane {
+  width : 25%;
+}
+
+#right-center-pane,
+#right-bottom-pane {
+  height : 50%;
+}
+
+#main-bottom-pane {
+  height   : 160px;
+  overflow : hidden;
+}
+
+.chart-node {
+  width  : 100%;
+  height : 100%;
+  margin : 5px 0 5px 0;
+}
+
+#histogram-slider-node {
+  padding-top : 20px !important;
+}
+
+.histogram-timeslider #histogram-timeslider-dijit {
+  bottom : 0 !important;
+}
+
+.histogram-timeslider #histogram-slider .dijitSliderImageHandleH {
+  height        : 16px;
+  width         : 16px;
+  border-radius : 10px;
+  top           : -10px;
+}
+
+.section-title {
+  position : absolute;
+  top      : 0;
+  left     : 0;
+  width    : 100%;
+}
+
+.section-title span {
+  padding     : 3px;
+  font-style  : italic;
+  font-weight : bolder;
+}
+
+.title-left {
+  text-align : left;
+}
+
+.title-center {
+  text-align : center;
+}
+
+.title-right {
+  text-align : right;
+}

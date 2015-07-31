@@ -1,0 +1,98 @@
+/*
+  To create your own theme:
+  1- copy this file into the ./css/ folder
+  2- edit file: search and replace the three colors in the 'body' tag
+  3- save changes
+  4- update the 'themeName' property in defaults.js
+*/
+
+body {
+  color               : #666 !important;
+  background-color    : #fff !important;
+  /* NOTE: THIS COLOR WILL BE USED AS THE ACCENT COLOR */
+  border-bottom-color : #A9D04E !important;
+}
+
+.esriSignInDialog * {
+  color : #666 !important;
+}
+
+.esriSignInDialog .dijitDialogTitleBar,
+.esriSignInDialog .dijitButtonNode {
+  background-color : #A9D04E !important;
+}
+
+.esriSignInDialog .dijitDialogTitle,
+.esriSignInDialog .dijitButtonText {
+  color : #666 !important;
+}
+
+.message-node {
+  opacity          : 0.5;
+  background-color : #A9D04E;
+}
+
+.message-node span {
+  color       : #666;
+  text-shadow : 1px 1px 0 #666;
+}
+
+.claro .dijitSplitterV .dijitSplitterThumb,
+.claro .dijitSplitterH .dijitSplitterThumb {
+  background-color : #A9D04E !important;
+}
+
+.claro .dijitSplitterHHover {
+  /* SIMPLE */
+  /*background : linear-gradient(to bottom, #fff 0px, #A9D04E 50%, #fff 100%);*/
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fff+0,a9d04e+50,fff+100 */
+  background : #fff; /* Old browsers */
+  background : -moz-linear-gradient(top, #fff 0px, #A9D04E 50%, #fff 100%); /* FF3.6+ */
+  background : -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(50%, #A9D04E), color-stop(100%, #fff)); /* Chrome,Safari4+ */
+  background : -webkit-linear-gradient(top, #fff 0px, #A9D04E 50%, #fff 100%); /* Chrome10+,Safari5.1+ */
+  background : -o-linear-gradient(top, #fff 0px, #A9D04E 50%, #fff 100%); /* Opera 11.10+ */
+  background : -ms-linear-gradient(top, #fff 0px, #A9D04E 50%, #fff 100%); /* IE10+ */
+  background : linear-gradient(to bottom, #fff 0px, #A9D04E 50%, #fff 100%); /* W3C */
+  filter     : progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#fff', GradientType=0); /* IE6-9 */
+}
+
+.claro .dijitSplitterVHover {
+  /* SIMPLE */
+  /*background-image : linear-gradient(to right, #fff 0px, #A9D04E 50%, #fff 100%);*/
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fff+0,a9d04e+50,fff+100 */
+  background : #fff; /* Old browsers */
+  background : -moz-linear-gradient(left, #fff 0px, #A9D04E 50%, #fff 100%); /* FF3.6+ */
+  background : -webkit-gradient(linear, left top, right top, color-stop(0, #fff), color-stop(50%, #A9D04E), color-stop(100%, #fff)); /* Chrome,Safari4+ */
+  background : -webkit-linear-gradient(left, #fff 0px, #A9D04E 50%, #fff 100%); /* Chrome10+,Safari5.1+ */
+  background : -o-linear-gradient(left, #fff 0px, #A9D04E 50%, #fff 100%); /* Opera 11.10+ */
+  background : -ms-linear-gradient(left, #fff 0px, #A9D04E 50%, #fff 100%); /* IE10+ */
+  background : linear-gradient(to right, #fff 0px, #A9D04E 50%, #fff 100%); /* W3C */
+  filter     : progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#fff', GradientType=1); /* IE6-9 */
+}
+
+#main-top-pane.dijitBorderContainer-child {
+  border-bottom : solid 6px #A9D04E !important;
+}
+
+#center-map-pane.dijitBorderContainer-child {
+  border : solid 2px #A9D04E !important;
+}
+
+#total-count-label {
+  text-shadow : 0 0 3px #A9D04E;
+}
+
+.histogram-timeslider #histogram-range {
+  color : #666 !important;
+}
+
+.histogram-timeslider #histogram-slider .dijitSliderImageHandleH {
+  background : #A9D04E !important;
+  border     : solid 2px #666 !important;
+}
+
+.section-title span {
+  border-bottom : dotted 2px #A9D04E;
+}

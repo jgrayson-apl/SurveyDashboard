@@ -1,0 +1,98 @@
+/*
+  To create your own theme:
+  1- copy this file into the ./css/ folder
+  2- edit file: search and replace the three colors in the 'body' tag
+  3- save changes
+  4- update the 'themeName' property in defaults.js
+*/
+
+body {
+  color               : #fff !important;
+  background-color    : #242529 !important;
+  /* NOTE: THIS COLOR WILL BE USED AS THE ACCENT COLOR */
+  border-bottom-color : #028EC9 !important;
+}
+
+.esriSignInDialog * {
+  color : #666 !important;
+}
+
+.esriSignInDialog .dijitDialogTitleBar,
+.esriSignInDialog .dijitButtonNode {
+  background-color : #028EC9 !important;
+}
+
+.esriSignInDialog .dijitDialogTitle,
+.esriSignInDialog .dijitButtonText {
+  color : #fff !important;
+}
+
+.message-node {
+  opacity          : 0.5;
+  background-color : #028EC9;
+}
+
+.message-node span {
+  color       : #fff;
+  text-shadow : 1px 1px 0 #242529;
+}
+
+.claro .dijitSplitterV .dijitSplitterThumb,
+.claro .dijitSplitterH .dijitSplitterThumb {
+  background-color : #028EC9 !important;
+}
+
+.claro .dijitSplitterHHover {
+  /* SIMPLE */
+  /*background : linear-gradient(to right, #242529 0px, #028EC9 50%, #242529 100%); /!* W3C *!/*/
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#242529+0,028ec9+50,242529+100 */
+  background : #242529; /* Old browsers */
+  background : -moz-linear-gradient(left, #242529 0px, #028EC9 50%, #242529 100%); /* FF3.6+ */
+  background : -webkit-gradient(linear, left top, right top, color-stop(0, #242529), color-stop(50%, #028EC9), color-stop(100%, #242529)); /* Chrome,Safari4+ */
+  background : -webkit-linear-gradient(left, #242529 0px, #028EC9 50%, #242529 100%); /* Chrome10+,Safari5.1+ */
+  background : -o-linear-gradient(left, #242529 0px, #028EC9 50%, #242529 100%); /* Opera 11.10+ */
+  background : -ms-linear-gradient(left, #242529 0px, #028EC9 50%, #242529 100%); /* IE10+ */
+  background : linear-gradient(to right, #242529 0px, #028EC9 50%, #242529 100%); /* W3C */
+  filter     : progid:DXImageTransform.Microsoft.gradient(startColorstr='#242529', endColorstr='#242529', GradientType=1); /* IE6-9 */
+}
+
+.claro .dijitSplitterVHover {
+  /* SIMPLE */
+  /*background : linear-gradient(to bottom, #242529 0px, #028EC9 50%, #242529 100%); /!* W3C *!/*/
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#242529+0,028ec9+50,242529+100 */
+  background : #242529; /* Old browsers */
+  background : -moz-linear-gradient(top, #242529 0px, #028EC9 50%, #242529 100%); /* FF3.6+ */
+  background : -webkit-gradient(linear, left top, left bottom, color-stop(0, #242529), color-stop(50%, #028EC9), color-stop(100%, #242529)); /* Chrome,Safari4+ */
+  background : -webkit-linear-gradient(top, #242529 0px, #028EC9 50%, #242529 100%); /* Chrome10+,Safari5.1+ */
+  background : -o-linear-gradient(top, #242529 0px, #028EC9 50%, #242529 100%); /* Opera 11.10+ */
+  background : -ms-linear-gradient(top, #242529 0px, #028EC9 50%, #242529 100%); /* IE10+ */
+  background : linear-gradient(to bottom, #242529 0px, #028EC9 50%, #242529 100%); /* W3C */
+  filter     : progid:DXImageTransform.Microsoft.gradient(startColorstr='#242529', endColorstr='#242529', GradientType=0); /* IE6-9 */
+}
+
+#main-top-pane.dijitBorderContainer-child {
+  border-bottom : solid 6px #028EC9 !important;
+}
+
+#center-map-pane.dijitBorderContainer-child {
+  border : solid 2px #028EC9 !important;
+}
+
+#total-count-label {
+  text-shadow : 0 0 3px #028EC9;
+}
+
+.histogram-timeslider #histogram-range {
+  color : #fff;
+}
+
+.histogram-timeslider #histogram-slider .dijitSliderImageHandleH {
+  background : #028EC9 !important;
+  border     : solid 2px #fff !important;
+}
+
+.section-title span {
+  border-bottom : dotted 2px #028EC9;
+}

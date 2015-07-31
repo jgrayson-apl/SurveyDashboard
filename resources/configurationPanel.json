@@ -1,0 +1,185 @@
+{
+  "configurationSettings": [
+    {
+      "category": "<b>Application</b>",
+      "fields": [
+        {
+          "type": "webmap"
+        },
+        {
+          "type": "string",
+          "fieldName": "surveyTitle",
+          "tooltip": "Application Title",
+          "label": "Title:"
+        },
+        {
+          "type": "string",
+          "fieldName": "surveyLogo",
+          "label": "Application Logo Url: (height=50px)",
+          "tooltip": "URL path to logo"
+        },
+        {
+          "type": "options",
+          "fieldName": "themeName",
+          "tooltip": "Color theme to use",
+          "label": "Color Theme:",
+          "options": [
+            {
+              "label": "survey123",
+              "value": "survey123"
+            },
+            {
+              "label": "black-n-blue",
+              "value": "black-n-blue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "<b>Chart Labels</b>",
+      "fields": [
+        {
+          "type": "string",
+          "fieldName": "surveyUserLabel",
+          "label": "User Label:",
+          "tooltip": "Label used for user chart"
+        },
+        {
+          "type": "string",
+          "fieldName": "timeLabel",
+          "label": "Time Interval Label:",
+          "tooltip": "Label used for HistogramTimeSlider"
+        },
+        {
+          "type": "string",
+          "fieldName": "surveyTypesLabel",
+          "label": "Types Label:",
+          "tooltip": "Label used for types chart"
+        },
+        {
+          "type": "string",
+          "fieldName": "overlayLabel",
+          "label": "Overlay Label:",
+          "tooltip": "Label used for overlay chart"
+        }
+      ]
+    },
+    {
+      "category": "<b>Survey123</b>",
+      "fields": [
+        {
+          "type": "layerAndFieldSelector",
+          "fieldName": "surveyLayerParam",
+          "label": "Survey Layer:",
+          "tooltip": "The Survey123 layer",
+          "fields": [
+            {
+              "multipleSelection": false,
+              "fieldName": "surveyUserFieldName",
+              "label": "USER Field Name:",
+              "tooltip": "Field name containing user names",
+              "supportedTypes": [
+                "esriFieldTypeString"
+              ]
+            },
+            {
+              "multipleSelection": true,
+              "fieldName": "surveyTypesFields",
+              "label": "TYPE Field Names:",
+              "tooltip": "Field names containing same type values",
+              "supportedTypes": [
+                "esriFieldTypeString"
+              ]
+            }
+          ],
+          "layerOptions": {
+            "supportedTypes": [
+              "FeatureLayer"
+            ],
+            "geometryTypes": [
+              "esriGeometryPoint"
+            ]
+          }
+        },
+        {
+          "type": "layerAndFieldSelector",
+          "fieldName": "overlayLayerParam",
+          "label": "Overlay Layer:",
+          "tooltip": "Name of layer used for overlay",
+          "fields": [
+            {
+              "multipleSelection": false,
+              "fieldName": "overlayFieldName",
+              "label": "Overlay Field Name:",
+              "tooltip": "Field name used to identify overlay features",
+              "supportedTypes": [
+                "esriFieldTypeString"
+              ]
+            }
+          ],
+          "layerOptions": {
+            "supportedTypes": [
+              "FeatureLayer"
+            ],
+            "geometryTypes": [
+              "esriGeometryPolygon"
+            ]
+          }
+        },
+        {
+          "type": "options",
+          "fieldName": "timeInterval",
+          "label": "Time Interval:",
+          "tooltip": "Time interval",
+          "options": [
+            {
+              "label": "Days",
+              "value": "esriTimeUnitsDays"
+            },
+            {
+              "label": "Months",
+              "value": "esriTimeUnitsMonths"
+            },
+            {
+              "label": "Years",
+              "value": "esriTimeUnitsYears"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "values": {
+    "surveyTitle": null,
+    "surveyLogo": "./images/Esri-labs.png",
+    "themeName": "survey123",
+    "surveyUserLabel": "User",
+    "timeLabel": "Day",
+    "surveyTypesLabel": "Types",
+    "overlayLabel": "Overlay",
+    "surveyLayerParam": {
+      "id": null,
+      "fields": [
+        {
+          "id": "surveyUserFieldName",
+          "fields": []
+        },
+        {
+          "id": "surveyTypesFields",
+          "fields": []
+        }
+      ]
+    },
+    "overlayLayerParam": {
+      "id": null,
+      "fields": [
+        {
+          "id": "overlayFieldName",
+          "fields": []
+        }
+      ]
+    },
+    "timeInterval": "esriTimeUnitsDays"
+  }
+}
