@@ -266,6 +266,21 @@ define([
     },
 
     /**
+     * STATISTICS QUERIES HAVE ISSUES WHEN THE DATE RANGE IS LESS THAN ONE DAY
+     *
+     * @param timeExtent
+     * @returns {*}
+     * @private
+     */
+    _adjustTimeExtent: function (timeExtent) {
+      var hourCount = date.difference(timeExtent.startTime, timeExtent.endTime, "hours");
+      if(hourCount < 24) {
+        timeExtent.endTime = date.add(timeExtent.startTime, 1, "day");
+      }
+      return timeExtent;
+    },
+
+    /**
      * HISTOGRAM TIME SLIDER
      */
     initHistogramTimeSlider: function () {
@@ -276,7 +291,7 @@ define([
         this.map.on("time-extent-change", lang.hitch(this, function (evt) {
           var features = this._getCurrentFeatures();
           dom.byId("total-count-label").innerHTML = features.length;
-          this.emit("features-updated", {features: features, timeExtent: evt.timeExtent});
+          this.emit("features-updated", {features: features, timeExtent: evt.timeExtent ? this._adjustTimeExtent(evt.timeExtent) : null});
         }));
 
         this.timeSlider = new HistogramTimeSlider({
@@ -528,12 +543,7 @@ define([
         countsQuery.outFields = [fieldName];
         countsQuery.where = "1=1";
         if(timeExtent) {
-          var dayCount = date.difference(timeExtent.startTime, timeExtent.endTime, "day");
-          if(dayCount < 1) {
-
-          } else {
-            countsQuery.timeExtent = new TimeExtent(timeExtent.startTime, data.add(timeExtent.startTime, 1, "day"));
-          }
+          countsQuery.timeExtent = timeExtent;
         }
 
         var statisticDefinition = new StatisticDefinition();
